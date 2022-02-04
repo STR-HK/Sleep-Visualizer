@@ -322,20 +322,20 @@ create('2325', '0416', '12022 / 01 / 31')
 window.dispatchEvent(new Event('resize'))
 
 
-import * as htmlToImage from './htmlToImage/index.js';
-import { toPng, toJpeg, toBlob, toPixelData, toSvg } from './htmlToImage/index.js';
+// import * as htmlToImage from './htmlToImage/index.js';
+// import { toPng, toJpeg, toBlob, toPixelData, toSvg } from './htmlToImage/index.js';
 
 
-function filter (node) {
-    return (node.tagName !== 'i');
-  }
+// function filter (node) {
+//     return (node.tagName !== 'i');
+//   }
 
-htmlToImage.toPng(
-    document.getElementById('app'),
-    { filter: filter }
-    ).then(function (dataUrl) {
-        var link = document.createElement('a');
-        link.download = 'my-image-name.svg';
-        link.href = dataUrl;
-        link.click();
-});
+// htmlToImage.toPng(
+//     document.getElementById('app'),
+//     { filter: filter }
+//     ).then(function (dataUrl) {
+//         var link = document.createElement('a');
+//         link.download = 'my-image-name.svg';
+//         link.href = dataUrl;
+//         link.click();
+// });
